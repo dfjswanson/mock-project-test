@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Land_Crime"
   DTS:PackageType="5"
-  DTS:VersionBuild="79"
-  DTS:VersionGUID="{7BB53FF4-2094-4C1C-B73D-DADBD8B55316}">
+  DTS:VersionBuild="80"
+  DTS:VersionGUID="{7D255F8B-2629-45D4-991C-507E022A7FAC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1627,6 +1627,13 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="hi&#xD;&#xA;"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="38.4,60"
+          Id="5644cbea-d2e3-4a17-826b-5c503c99816e"
+          TopLeft="355.428577481484,82.5882364523865" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
