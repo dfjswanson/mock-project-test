@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="StageDailyWeather"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{DCE5BC8A-C6D5-4486-AD5E-C9DF4E6503AC}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{5EA10B8E-DC74-46E8-ACCC-38F5CAC6489E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CHI-JSWANSON2.SQLBootcamp]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{46F2254D-72A4-4D23-AD71-39F4FAB0229D}"
-      DTS:ObjectName="CHI-JSWANSON2.SQLBootcamp">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=CHI-JSWANSON2;Initial Catalog=SQLBootcamp;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat_File_Src_Daily_Weather]"
       DTS:CreationName="FLATFILE"

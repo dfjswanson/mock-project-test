@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="StageHourlyWeather"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{8F2AEBB9-FEBF-4496-BD26-C654B22354E2}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{C9AA54F9-8576-40A1-8BCE-AC707046F916}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CHI-JSWANSON2.SQLBootcamp]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D0CA0295-3185-4709-B2CA-3D1020534B07}"
-      DTS:ObjectName="CHI-JSWANSON2.SQLBootcamp">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=CHI-JSWANSON2;Initial Catalog=SQLBootcamp;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat_File_Src_Hourly_Weather]"
       DTS:CreationName="FLATFILE"
