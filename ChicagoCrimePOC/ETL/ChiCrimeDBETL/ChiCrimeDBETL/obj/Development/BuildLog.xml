@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ChiCrimeDBETL</Name>
-    <LastWriteTime>2017-08-10T19:40:59.7564675Z</LastWriteTime>
+    <LastWriteTime>2017-08-10T20:12:22.3771858Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -48,7 +48,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>StageHourlyWeather.dtsx</Name>
-      <LastWriteTime>2017-08-10T19:40:59.7078381Z</LastWriteTime>
+      <LastWriteTime>2017-08-10T20:29:04.8656821Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>StageDailyWeather.dtsx</Name>
+      <LastWriteTime>2017-08-10T20:24:27.2309661Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

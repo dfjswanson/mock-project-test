@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="StageHourlyWeather"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{D2B29844-FB31-4EFF-89C8-B2F5EB470D54}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{8F2AEBB9-FEBF-4496-BD26-C654B22354E2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -469,6 +469,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_precipIntensity]"
                           name="DC_precipIntensity"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -489,6 +490,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_precipProbability]"
                           name="DC_precipProbability"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -509,6 +511,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_apparentTemperature]"
                           name="DC_apparentTemperature"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -529,6 +532,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_dewPoint]"
                           name="DC_dewPoint"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -549,6 +553,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_humidity]"
                           name="DC_humidity"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -569,6 +574,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_windSpeed]"
                           name="DC_windSpeed"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -609,6 +615,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_visibility]"
                           name="DC_visibility"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -629,6 +636,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_cloudCover]"
                           name="DC_cloudCover"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -649,6 +657,7 @@
                           errorRowDisposition="RedirectRow"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_pressure]"
                           name="DC_pressure"
+                          scale="2"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -1278,36 +1287,42 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_precipIntensity]"
                           cachedDataType="decimal"
                           cachedName="DC_precipIntensity"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[precipIntensity]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_precipIntensity]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_precipProbability]"
                           cachedDataType="decimal"
                           cachedName="DC_precipProbability"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[precipProbability]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_precipProbability]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_apparentTemperature]"
                           cachedDataType="decimal"
                           cachedName="DC_apparentTemperature"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[apparentTemperature]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_apparentTemperature]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_dewPoint]"
                           cachedDataType="decimal"
                           cachedName="DC_dewPoint"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dewPoint]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_dewPoint]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_humidity]"
                           cachedDataType="decimal"
                           cachedName="DC_humidity"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[humidity]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_humidity]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_windSpeed]"
                           cachedDataType="decimal"
                           cachedName="DC_windSpeed"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[windSpeed]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_windSpeed]" />
                         <inputColumn
@@ -1320,18 +1335,21 @@
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_visibility]"
                           cachedDataType="decimal"
                           cachedName="DC_visibility"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[visibility]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_visibility]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_cloudCover]"
                           cachedDataType="decimal"
                           cachedName="DC_cloudCover"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cloudCover]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_cloudCover]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_pressure]"
                           cachedDataType="decimal"
                           cachedName="DC_pressure"
+                          cachedScale="2"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pressure]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_pressure]" />
                       </inputColumns>
@@ -1627,9 +1645,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="12.4071444384905,-22,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout

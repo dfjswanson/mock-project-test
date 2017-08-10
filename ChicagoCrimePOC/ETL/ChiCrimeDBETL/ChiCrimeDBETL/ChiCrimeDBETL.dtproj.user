@@ -4,7 +4,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <ServerName>Mock-project-test.centralus.cloudapp.azure.com</ServerName>
+        <ServerName>wmp-mock-project-test.centralus.cloudapp.azure.com</ServerName>
         <PathOnServer>/SSISDB/ChicagoCrime/ChiCrimeDBETL</PathOnServer>
         <Run64BitRuntime>true</Run64BitRuntime>
         <UserIDs />
