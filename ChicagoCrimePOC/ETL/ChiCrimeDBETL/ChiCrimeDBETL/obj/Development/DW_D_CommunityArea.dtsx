@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DW_D_CommunityArea"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{AE79D100-E27F-4798-A947-648FB67331FF}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{00B20788-647B-4FA7-8F4B-533B06DAE9F2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -778,7 +778,7 @@ ORDER BY CommunityAreaCode ASC</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{607170FF-CB34-48E6-8D81-080160D60AAD}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE TEMP.D_CommunityArea&#xA;//yes" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE TEMP.D_CommunityArea&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>

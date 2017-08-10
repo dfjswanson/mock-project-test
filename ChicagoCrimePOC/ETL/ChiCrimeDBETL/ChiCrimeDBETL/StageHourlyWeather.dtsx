@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="StageHourlyWeather"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{8140CD82-AE0D-4369-A38C-1EDF3AA80BA4}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{D2B29844-FB31-4EFF-89C8-B2F5EB470D54}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -191,7 +191,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="2"
-          DTS:ConnectionString="C:\Users\JSWANSON\Documents\ChicagoCrimePOC\Data\HourlyStage" />
+          DTS:ConnectionString="C:\ChicagoCrimeETL\weather\processed" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -231,7 +231,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\JSWANSON\Documents\ChicagoCrimePOC\Data\HourlyWeather" />
+              Folder="C:\ChicagoCrimeETL\weather\hourlyWeather" />
             <FEFEProperty
               FileSpec="*.*" />
             <FEFEProperty
@@ -1233,8 +1233,8 @@
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[CHI-JSWANSON2.SQLBootcamp]"
-                      connectionManagerRefId="Package.ConnectionManagers[CHI-JSWANSON2.SQLBootcamp]"
+                      connectionManagerID="{607170FF-CB34-48E6-8D81-080160D60AAD}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OLE_TRGT_ChicagoCrimeDB]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1406,10 +1406,6 @@
                           dataType="numeric"
                           name="pressure"
                           precision="18" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HourlyTimeID]"
-                          dataType="i4"
-                          name="HourlyTimeID" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1520,8 +1516,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{7DB3F006-5BC9-450F-896F-47CE8399DB12}"
-          DTS:ObjectName="{7DB3F006-5BC9-450F-896F-47CE8399DB12}"
+          DTS:DTSID="{2481D82B-BA88-438F-B74F-3AF8E114C461}"
+          DTS:ObjectName="{2481D82B-BA88-438F-B74F-3AF8E114C461}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Filename" />
       </DTS:ForEachVariableMappings>
@@ -1575,7 +1571,7 @@
           PanelSize="235.2,224.8"
           Size="235.2,268"
           Id="Package\Foreach Loop Container"
-          TopLeft="94.928572440634,314.088229597151" />
+          TopLeft="33.7857142565202,7.82940442042354" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1585,6 +1581,14 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\Row Count"
+          TopLeft="406.285721204719,119.905884034576" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion"
+          TopLeft="279.214290375612,58.1117654437425" />
+        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Foreach Loop Container\Data Flow Task\Flat File Source"
           TopLeft="88.0000014986311,11.0117648603182" />
@@ -1592,10 +1596,6 @@
           Size="170.4,41.6"
           Id="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination"
           TopLeft="140.571430965346,120.517648749038" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion"
-          TopLeft="279.214290375612,58.1117654437425" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
           TopLeft="238.400001498631,31.8117648603182">
@@ -1627,7 +1627,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="12.4071444384905,-22,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1658,10 +1660,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Foreach Loop Container\Data Flow Task\Row Count"
-          TopLeft="406.285721204719,119.905884034576" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Data Flow Task.Paths[Data Conversion Error Output]"
           TopLeft="434.414290375612,78.9117654437425">

@@ -16,7 +16,7 @@
       DTS:ConnectionString="Data Source=localhost;User ID=ETL_User;Initial Catalog=ChicagoCrime;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3UP2S47qmky0C7D02LhRGQAAAAACAAAAAAADZgAAwAAAABAAAAACFwfXgmqeak5fgAbmm4FLAAAAAASAAACgAAAAEAAAAHHonaqNEbNl4ddKnnrewnN4AAAA9x9oFag63x4pKveDnZVQEUOecEfhYo2KzmG8+wWTAT7U6kyNglmkRn0mAh97NK+xujn+uD0Aev1mMUMSq0e1hEWqTlCuZZg4csPGRTcmSwLNvg1Z7voG49Wns0ByVHQDh836FZi4GJj2zeDv49FN0YzK+Ymtz0qGFAAAAH1Ra+CZyALMLeghiCR7anAefyYj</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3UP2S47qmky0C7D02LhRGQAAAAACAAAAAAADZgAAwAAAABAAAADrdA4L44IabbCa0g9GORsNAAAAAASAAACgAAAAEAAAAGVWPH2Q/1Rh7x6ugNxZsmR4AAAAIKXzoUMVkvgpZFcIpmW0scIDSNjpJkNp/DnwmSBRdNX1+jxoVkewJSMi2VzlzgQlCiLm0i3LRtvfC7DqIyquzKFduqj5F9HC61yH3kNkRVm9c8wmsiL9a8vRRTJ7oUuOYsv0M2srOOUivkpHBpqtPq2eR6jYL3OhFAAAAExxbfoQ25hn2a23VYR4zgIoo27F</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
